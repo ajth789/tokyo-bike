@@ -1,0 +1,58 @@
+.hide
+  display: none
+
+.positioner
+  max-width: 970px
+  margin: 0 auto
+
+%flex
+  display: flex
+
+header
+    @extend %flex
+    justify-content: flex-end
+    padding: 50px
+    background-color: white
+
+header img
+  padding-right: 200px
+  height: 30px
+  width: 166px
+
+nav
+  @extend %flex
+  align-items: center
+  justify-content: center
+  background-color: white
+
+  ul
+    @extend %flex
+
+    li
+      list-style-type: none
+      margin:  0 20px
+
+body
+  font-family: "Helvetica Neue", "Arial", "sans-serif"
+  font-size: 13px
+  color: black
+  line-height: 1.4em
+  font-weight: normal
+  font-style: normal
+
+.hero-image
+  @extend %flex
+  max-width: 100%
+  justify-content: center
+
+.hero-caption
+  @extend %flex
+  text-align: center
+  justify-content: center
+  align-items: flex-end
+  padding: 28px 40px 28px 40px
+
+.thumbnails
+  @extend %flex
+  max-width: 100%
+  justify-content: space-between
